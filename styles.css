@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  body{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: 	#f3f8fc;
+    line-height: 1.5;
+  }
+  
+  html{
+      scroll-behavior: smooth;
+  }
+  
+  #navbar{
+    position: fixed;
+    background-color: #e9f4fc;
+    color: #1A1A40;
+    width: 28%;
+    min-width: 25%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  
+  #navbar h2{
+    text-align: left;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-top: 18px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding: min(20px, 1.25rem);
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-bottom: 1.3px solid #8da4bf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 24px;
+  }
+  
+  #navbar a:visited{
+    color: #001b33;
+  }
+  
+  #navbar a{
+    display: block;
+    text-align: left;
+    color: #1A1A40;
+    margin: 0 0;
+    padding: 0.5rem 1rem;
+  }
+  
+  #navbar a:hover{
+    background-color: 	#1A1A40;
+    color: white;
+  }
+  
+  .main-section{
+    margin-left: min(400px,30%);
+    padding: 20px 0;
+    padding-left: max(20px,30px);
+  }
+  
+  .main-section header{
+    font-size: 26px;
+    font-weight: 600;
+    color: #1A1A40;
+    margin-bottom: 0.75rem;
+  }
+  
+  .main-section li{
+    margin-top: 0.35rem;
+    margin-bottom: 0.75rem;
+    color: #333333;
+  }
+  
+  .main section li.disc{
+    list-style-type: circle;
+  }
+  
+  .main-section p{
+    line-height: 1.5;
+    color: #333333;
+  }
+  #Reference a{
+    text-decoration: underline;
+  }
+  @media only screen and (max-width: 480px) {
+  
+    #navbar{
+      position: absolute;
+      top: 0%;
+      width: 100%;
+      height: 40%;
+    }
+  
+    #navbar a{
+      padding: min(13px, 0.4rem);
+      word-wrap: break-word;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    #navbar h2{
+      font-size: 1.1rem;
+      word-wrap: break-word;
+      padding: max(15px, 10px);
+    }
+    .main-section{
+      margin-left: 20px;
+      padding: 20px 0;
+      padding-left: max(20px,10px);
+    }
+    #Introduction{
+      margin-top: max(30%,150px)
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    #navbar{
+      position: absolute;
+      top: 0%;
+      width: 100%;
+      height: 45%;
+    }
+  
+    #navbar a{
+      padding: min(13px, 0.4rem);
+      word-wrap: break-word;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    #navbar h2{
+      font-size: 1.1rem;
+      word-wrap: break-word;
+      padding: max(15px, 10px);
+    }
+    .main-section{
+      margin-left: 20px;
+      padding: 20px 0;
+      padding-left: max(20px,10px);
+    }
+    #Introduction{
+      /* margin-top: 30%; */
+      margin-top: max(30%,200px);
+    }
+  }
